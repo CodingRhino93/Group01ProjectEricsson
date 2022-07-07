@@ -12,6 +12,6 @@ public interface NodeRepository
 
     boolean updateNode(int id, String name);
 
-    void deleteNode();
+    boolean deleteNode(int id);
 
 }

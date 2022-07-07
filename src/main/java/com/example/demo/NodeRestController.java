@@ -51,10 +51,9 @@ public class NodeRestController
         }
     }
 
-
-    @DeleteMapping
-    public ResponseEntity deleteAllNodes() {
-        repository.deleteNode();
+    @DeleteMapping(value="{id}")
+    public ResponseEntity deleteOneNode(@PathVariable int id) {
+        repository.deleteNode(id);
         return ResponseEntity.ok().build();
     }
 

@@ -49,10 +49,16 @@ public class NodeRepositoryImpl implements NodeRepository
         }
     }
     @Override
-    public void deleteNode() {
+    @Transactional
+    public boolean deleteNode(int id) {
+        Node node = entityManager.find(Node.class, id);
 
-        Query query = entityManager.createQuery("Delete Node");
-        query.executeUpdate();
-        
+        if (node == null) {
+            return false;
+        }
+        else {
+            entityManager.remove(node);
+            return true;
+        }
     }
 }
