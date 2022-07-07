@@ -11,7 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GroupProject01Application
 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		SpringApplication.run(GroupProject01Application.class, args);
 	}
 
