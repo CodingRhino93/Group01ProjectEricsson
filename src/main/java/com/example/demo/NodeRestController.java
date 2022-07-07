@@ -51,4 +51,11 @@ public class NodeRestController
         }
     }
 
+
+    @DeleteMapping
+    public ResponseEntity deleteAllNodes() {
+        repository.deleteNode();
+        return ResponseEntity.ok().build();
+    }
+
 }
