@@ -24,11 +24,11 @@ public class Node {
     }
 
     public Node(int nodeId, String name, String location, double longitude, double latitude) {
-        this.latitude = latitude;
-        this.longitude = longitude;
+        this.nodeID = nodeId;
         this.name = name;
         this.location = location;
-        this.nodeID = nodeId;
+        this.longitude = longitude;
+        this.latitude = latitude;
     }
 
     public int getNodeID()
