@@ -31,6 +31,13 @@ public class Node {
         this.latitude = latitude;
     }
 
+    public Node(String name, String location, double longitude, double latitude) {
+        this.name = name;
+        this.location = location;
+        this.longitude = longitude;
+        this.latitude = latitude;
+    }
+
     public int getNodeID()
     {
         return nodeID;

@@ -25,4 +25,14 @@ public class NodeRepositoryTest {
         assertThat(nodeRepository.getNode(1).getName(), is("Test123"));
     }
 
+    @Test
+    public void testForNodeLocation(){
+        assertThat(nodeRepository.getNode(2).getLocation(), is("Ireland"));
+    }
+
+    @Test
+    public void testForNodeLongitude(){
+        assertThat(nodeRepository.getNode(1).getLongitude(), is(40.50));
+    }
+
 }

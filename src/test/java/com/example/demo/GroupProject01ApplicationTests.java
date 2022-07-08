@@ -33,6 +33,6 @@ class GroupProject01ApplicationTests {
 		assertThat(responseEntity.getStatusCode(), is(HttpStatus.OK));
 	}
 
-	
+
 
 }
